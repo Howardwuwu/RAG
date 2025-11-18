@@ -1,0 +1,9 @@
+#!/bin/sh
+'''exec' "/Users/w2641/Desktop/CM_Work Doc/美股營收組成專案/RAG_FRAMEWORK_ENV/bin/python3.10" "$0" "$@"
+' '''
+import sys
+from jsonschema.cli import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())
